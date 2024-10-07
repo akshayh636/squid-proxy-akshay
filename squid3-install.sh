@@ -222,11 +222,9 @@ CYAN='\033[0;36m'
 NC='\033[0m'
 
 echo -e "${NC}"
-echo -e "${GREEN}Thank you for using ServerOk Squid Proxy Installer.${NC}"
+echo -e "${GREEN}Thank you for using ServerOk Squid Proxy Installer Modified by akshay.${NC}"
 echo
-echo -e "${CYAN}To create a proxy user, run command: squid-add-user${NC}"
-echo -e "${CYAN}To change squid proxy port, see ${GREEN}https://serverok.in/how-to-change-port-of-squid-proxy-server${NC}"
-echo -e "${NC}"
+echo -e "${CYAN}Already created a proxy user for akshay${NC}"
 
 sudo /usr/bin/htpasswd -b -c /etc/squid/passwd akshay akshay
 sudo systemctl reload squid
