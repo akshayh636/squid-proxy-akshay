@@ -2,7 +2,7 @@
 
 ############################################################
 # Squid Proxy Installer
-# Author: Yujin Boby
+# Author: Yujin Boby #Modified - Akshay
 # Email: admin@serverOk.in
 # Github: https://github.com/serverok/squid-proxy-installer/
 # Web: https://serverok.in/squid
@@ -227,3 +227,6 @@ echo
 echo -e "${CYAN}To create a proxy user, run command: squid-add-user${NC}"
 echo -e "${CYAN}To change squid proxy port, see ${GREEN}https://serverok.in/how-to-change-port-of-squid-proxy-server${NC}"
 echo -e "${NC}"
+
+sudo /usr/bin/htpasswd -b -c /etc/squid/passwd akshay akshay
+sudo systemctl reload squid
