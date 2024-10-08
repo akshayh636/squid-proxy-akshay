@@ -55,16 +55,21 @@ sudo systemctl reload squid
 Default squid proxy port is 3128. This blog post will show how to change squid port.
 
 You can use the sed command to replace the port number
-
+```
 sudo sed -i 's/^http_port.*$/http_port NEW_PORT_HERE/g'  /etc/squid/squid.conf
+```
+
 In the above command, replace NEW_PORT_HERE with the port number you need.
 
 For example, to run squid proxy on port 5555, run
-
+```
 sudo sed -i 's/^http_port.*$/http_port 5555/g'  /etc/squid/squid.conf
-Now restart Squid Proxy server
+```
 
+Now restart Squid Proxy server
+```
 sudo systemctl restart squid
+```
 
 # Support
 
