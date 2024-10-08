@@ -20,7 +20,10 @@ wget https://raw.githubusercontent.com/akshayh636/squid-proxy-akshay/master/squi
 sudo bash squid3-install.sh
 ```
 # Create Proxy Users
-Already Created a user akshay password akshay
+Already Created a user 
+```
+user-akshay , password- akshay
+```
 
 To create new users, run
 
