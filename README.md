@@ -22,13 +22,13 @@ sudo bash squid3-install.sh
 # Create Proxy Users
 Already Created a user 
 ```
-user-akshay , password- akshay
+user-akshay , password-akshay
 ```
 
 To create new users, run
 
 ```
-squid-add-user
+sudo squid-add-user
 ```
 
 OR run following commands
